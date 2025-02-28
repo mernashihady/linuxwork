@@ -1,0 +1,35 @@
+    1  cd ~
+    2  mkdir ~/Q2_ENV
+    3  ls -ld ~/Q2_ENV
+    4  python3 --version
+    5  cd ~/Q2_ENV
+    6  python3 -m venv venv
+    7  source ~/Q2_ENV/venv/bin/activate
+    8  pip install numpy
+    9  python -c "import numpy; print(numpy.__version__)"
+   10  pip freeze > requirements.txt
+   11  cd ~/Work_Course_Linux
+   12  mkdir Q2
+   13  cp ~/Work_Course_Linux/DOWNLOADS/py1.py Q2/
+   14  find ~/Work_Course_Linux -name "py1.py"
+   15  cp /root/Work_Course_Linux/DOWNLOADS/LINUX_COURSE_WORK-downloads/py1.py ~/Work_Course_Linux/Q2/
+   16  ls -l ~/Work_Course_Linux/Q2/
+   17  chmod 755 ~/Work_Course_Linux/Q2/py1.py
+   18  ls -l ~/Work_Course_Linux/Q2/py1.py
+   19  python ~/Work_Course_Linux/Q2/py1.py > ~/Work_Course_Linux/Q2/q2_output.txt
+   20  cat ~/Work_Course_Linux/Q2/q2_output.txt
+   21  source ~/Q2_ENV/venv/bin/activate
+   22  touch ~/Work_Course_Linux/Q2/requirements.txt
+   23  pip freeze > ~/Work_Course_Linux/Q2/requirements.txt
+   24  cat ~/Work_Course_Linux/Q2/requirements.txt
+   25  source ~/Q2_ENV/venv/bin/activate
+   26  pip install -r ~/Work_Course_Linux/Q2/requirements.txt
+   27  nano ~/Work_Course_Linux/Q2/py1.py
+   28  arr = np.array([10, 20, 30, 40, 50])
+   29  python ~/Work_Course_Linux/Q2/py1.py >> ~/Work_Course_Linux/Q2/q2_output.txt
+   30  cat ~/Work_Course_Linux/Q2/q2_output.txt
+   31  git add ~/Work_Course_Linux/Q2/q2_output.txt ~/Work_Course_Linux/Q2/py1.py
+   32  git commit -m "Updated py1.py with new values and appended results to q2_output.txt"
+   33  git push origin master
+   34  git remote -v
+   35  history > ~/Work_Course_Linux/Q2/linux_history.txt
